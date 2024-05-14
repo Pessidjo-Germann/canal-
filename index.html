@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myCANAL : tv,sports,series,films,documents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $(window).scroll(function(){
+              var scroll = $(window).scrollTop();
+              if (scroll > 0) {
+                  $('#maBox').removeClass('bg-transparent').addClass('bg-black');
+              } else {
+                  $('#maBox').removeClass('bg-black').addClass('bg-transparent');
+              }
+          });
+      });
+      </script>
+
+    <link rel="stylesheet" href="./assets/css/output.css" />
+  </head>
+  <body class="bg-black">
+    <header >
+       
+      <nav id="maBox" class=" py-1 w-full z-10 bg-transparent fixed">
+      <div class="flex flex-row items-center justify-center  ">
+           <img src="./assets/Images/Canal-Logo.png"  class="bg-white px-2 " width="40px" alt="canal+" class="h-32">
+
+               <ul class="flex flex-row  gap-3  text-white px-4 ">
+                 <li class="hover:text-red-700"><a href="#" class=""> Nos Créations </a></li>
+       
+                 <li class="hover:text-red-700"><a href="#"> Cinéma </a></li>
+       
+                 <li class="hover:text-red-700"><a href="#"> Séries </a></li>
+       
+                 <li class="hover:text-red-700"><a href="#"> Sport </a></li>
+               
+                 <li class="hover:text-red-700"><a href="#"> Diversement </a></li>
+       
+                 <li class="hover:text-red-700"><a href="#"> Jeunesse </a></li>
+
+                 <li class="hover:text-red-700"> <a href="#"> Chaines </a></li>
+
+               </ul>
+               <div class="flex justify-end items-center gap-3 mx-20 part-search">
+
+                <div><svg xmlns="http://www.w3.org/2000/svg"   width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
+              <div> <a href="" class="text-white color-bg rounded px-2  py-1 place-content-center transition hover:bg-red-700">SE REABONNER</a></div>
+              <div> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3"/><circle cx="12" cy="10" r="3"/><circle cx="12" cy="12" r="10"/></svg></div>
+        
+            </div>
+       
+             </nav> 
+            </header>          
+     <body>        
+             <div class="container cont-back">
+              
+                  <h1 class="pt-72 title text-white">NE CONFIEZ PAS VOTRE<br> IMAGINATION À N'IMPORTE QUI</h1>
+                  <p class="pt-2 title2">Regardez le meilleur des séries, des films et du sport en streaming et en illimité.</p>
+                  <div class="pt-4"> <a href="" class="text-white color-bg rounded px-2  py-1 place-content-center transition hover:bg-red-700 link " >SE REABONNER</a></div>
+                <p class="pt-2 title3 text-stone-400">En mai sur Canal+</p>
+                <video id="background-video" autoplay loop muted>
+                  <source src="./assets/Video/VID_20240509_120015_745.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="text-white  font ">
+              <p class="font-p"> Pas encore abonné ? Découvrez dès maintenant les bouquets CANAL+ Afrique
+              <a href="http://" class="uppercase btn">Je decouvre</a></p>
+            </div>
+
+            <div class="flex" >
+                <img class="card " src="./assets/Images/myCANAL_16x9_Logotype_MEA_1920x1080.jpg" width="90%" height="50%" alt="">
+                <div class="card1 flex-none">
+                  <h2 class="text-red-500 card1-h2">UNE CRÉATION CANAL+ <br>ORIGINAL</h2>
+                  <p class="card1-p">LEX AFRICANA</p>
+                  <p class="card1-p2">Les créations originales CANAL+ : souvent copiées, jamais égalées.</p>
+                  <a class="card1-link btn" href="http://">DECOUVRIR</a>
+                </div>
+        
+            </div>
+            <div class="grid grid-cols-4 text-red-500 card2">
+              <!-- ON CREAIS UNE GRID AVEC 4 COLONE -->
+                  <div>
+                    <!--1er colonne-->
+                          <div class="card2-box">
+                              <h1 class="text-red-500 card2-h1 uppercase">Cinema</h1>
+                              <p class="card2-p1">ICI C'EST TOUS LES JOURS DU GRAND SPECTACLE</p>
+                              <p class="card2-p2" >Des films inédits et ultra-récents, des co-productions africaines ainsi que le meilleur du cinéma de Nollywood</p>
+                              <a class="card2-link btn" href="http://">TOUT LE CINEMA CANAL+</a>
+                          </div>
+                          <div class="card2-img1">
+                            <a href="http://"><img src="./assets/Images/myCANAL_16x9_MEA_1920x1080.webp" alt=""></a>
+                          
+                            <p class="text-white card2-img1-p">WHITE ELEPHANT</p>
+                        </div>
+                </div>
+                <div class="colon-2">
+                  <!--2eme colonne-->
+                      <div class="card2-img1">
+                          <a href="http://"><img src="./assets/Images/myCANAL_16x9_MEA_1920x1080-R3yX.webp" alt=""></a>
+                          <p class="text-white card2-img1-p">BALKISSA, LES DEMONS DE MINUIT</p>
+                      </div>
+                      <div class="card2-img1">
+                        <a href=""><img src="./assets/Images/108342722.webp" alt=""></a>
+                        <p class="text-white colon2-img1-p uppercase">jurassic world:le monde <br>d'apres</p>
+                      </div>
+                </div> 
+                <div>
+                <!--3em colonne -->
+                    <div class="card2-img2">
+                      <a href=""><img src="./assets/Images/107355811.webp" alt=""></a>
+                      <p class="text-white card2-img1-p">LES ETERNELS</p>
+                    </div>
+                    <div class="card2-img1">
+                      <a href="http://"><img src="./assets/Images/myCANAL-ALD_MEA_Pivot_16x9_1920x1080.webp" alt=""></a>
+                      <p class="text-white card2-img1-p">LOVING</p>
+                  </div>
+                </div>
+                <div><!--4em colonne-->
+                    <div class="card2-img3">
+                      <a href=""><img src="./assets/Images/myCANAL_Jaquette_Fiche_Programme_MEA_1242x1656.jpg"  alt=""></a>
+                      <p class="text-white card2-img3-p">BLACK PANTHER: WAKANDA<br> FOREVER</p>
+                    </div>
+                    <div class="colon4-card2-img2">
+                      <a href=""><img src="./assets/Images/myCANAL_Jaquette_Fiche_Programme_MEA_1242x1656 (1).webp" alt=""></a>
+                      <p class="text-white card2-img1-p">LIGUE DES CHAMPIONS</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <!--
+
+                DEUXIEME GRID
+            -->
+            <div class="grid grid-cols-4 text-red-500 card2">
+              <!-- ON CREAIS UNE GRID AVEC 4 COLONE -->
+                  <div>
+                    <!--1er colonne-->
+                          <div class="card2-box">
+                              <h1 class="text-red-500 card2-h1 uppercase">SPORT</h1>
+                              <p class="card2-p1">TROUVER UN LIVE NE DEVRAIT PAS ÊTRE UN SPORT</p>
+                              <p class="grid2-card2-p2" >Les plus grandes compétitions de football européennes et africaines, les 5 prestigieux championnats de football européens, et aussi la NBA, le Top 14, les Grand Prix de Formule 1™</p>
+                              <a class="card2-link btn" href="http://">TOUT LE SPORT CANAL+</a>
+                          </div>
+                          <div class="card2-img1 grid-colon-2">
+                            <a href="http://"><img src="./assets/Images/myCANAL-ALD_MEA_Pivot_16x9_Fiche_Programme_1920x1080.jpg" alt=""></a>
+                          
+                            <p class="text-white card2-img1-p">LIGUE 1 UBER EATS</p>
+                        </div>
+                </div>
+                <div class="colon-2">
+                  <!--2eme colonne-->
+                      <div class="card2-img1">
+                          <a href="http://"><img src="./assets/Images/myCANAL-ALD_MEA_Pivot_16x9_Fiche_Programme_1920x1080 (1).jpg" alt=""></a>
+                          <p class="text-white card2-img1-p">LA LIGA</p>
+                      </div>
+                      <div class="card2-img1">
+                        <a href=""><img height="30%" src="./assets/Images/myCANAL_MEA_Jaquette_Fiche_Programme_1242x1656 (3).jpg" alt=""></a>
+                        <p class="text-white colon2-img1-p uppercase">nba</p>
+                      </div>
+                </div> 
+                <div>
+                <!--3em colonne -->
+                    <div class="card2-img2">
+                      <a href=""><img src="./assets/Images/myCANAL_MEA_Jaquette_Fiche_Programme_1242x1656.jpg" alt=""></a>
+                      <p class="text-white card2-img1-p">LIGUE DES CHAMPIONS</p>
+                    </div>
+                    <div class="card2-img1">
+                      <a href="http://"><img src="./assets/Images/myCANAL-ALD_MEA_Pivot_16x9_Fiche_Programme_1920x1080.jpeg" alt=""></a>
+                      <p class="text-white card2-img1-p">UFC</p>
+                  </div>
+                </div>
+                <div><!--4em colonne-->
+                    <div class="card2-img1">
+                      <a href=""><img width="88%" src="./assets/Images/myCANAL-ALD_MEA_Pivot_16x9_Fiche_Programme_1920x1080-4.jpeg"  alt=""></a>
+                      <p class="text-white card2-img3-p">FORMULE 1</p>
+                    </div>
+                    <div class="colon4-card2-img2">
+                      <a href=""><img src="./assets/Images/myCANAL_MEA_Jaquette_Fiche_Programme_1242x1656 (1).jpg" alt=""></a>
+                      <p class="text-white card2-img1-p">PREMIERE LEAGUE</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <!--
+                FIN DEUXIEME GRID
+            -->
+            <!--
+
+                TROISIEME GRID
+            -->
+            <div class="grid grid-cols-4 text-red-500 card2">
+              <!-- ON CREAIS UNE GRID AVEC 4 COLONE -->
+                  <div>
+                    <!--1er colonne-->
+                          <div class="card2-box">
+                              <h1 class="text-red-500 card2-h1 uppercase">SÉRIES</h1>
+                              <p class="card2-p1">DES SÉRIES À CONSOMMER SANS MODÉRATION</p>
+                              <p class="card2-p2" >Les meilleures séries novelas et africaines, de grandes séries internationales à succès et des créations CANAL+ ORIGINAL.</p>
+                              <a class="card2-link btn" href="http://">TOUTES LES SERIES CANAL+</a>
+                          </div>
+                          <div class="card2-img1 grid-colon-2">
+                            <a href="http://"><img src="./assets/Images/myCANAL_16x9_MEA_1920x1080-6DPG.webp" alt=""></a>
+                          
+                            <p class="text-white card2-img1-p">L'AMOUR INVINCIBLE</p>
+                        </div>
+                </div>
+                <div class="colon-2">
+                  <!--2eme colonne-->
+                      <div class="card2-img1">
+                          <a href="http://"><img src="./assets/Images/113396998.webp" alt=""></a>
+                          <p class="text-white card2-img1-p">LA BATAILLE DES CHERIES-SAISON2</p>
+                      </div>
+                      <div class="card2-img1">
+                        <a href=""><img src="./assets/Images/myCANAL_Jaquette_Fiche_Programme_MEA_1242x1656-S1FA.webp" alt=""></a>
+                        <p class="text-white colon2-img1-p uppercase">l'ex africana</p>
+                      </div>
+                </div> 
+                <div>
+                <!--3em colonne -->
+                    <div class="card2-img2">
+                      <a href=""><img src="./assets/Images/104520638.webp" alt=""></a>
+                      <p class="text-white card2-img1-p">REYKA</p>
+                    </div>
+                    <div class="card2-img1">
+                      <a href="http://"><img src="./assets/Images/myCANAL-ALD_MEA_Pivot_16x9_1920x1080.webp" alt=""></a>
+                      <p class="text-white card2-img1-p">EWUSU-SAISON1</p>
+                  </div>
+                </div>
+                <div><!--4em colonne-->
+                    <div class="card2-img3">
+                      <a href=""><img src="./assets/Images/113726410.webp"  alt=""></a>
+                      <p class="text-white card2-img3-p">NOS ANNEES FAC</p>
+                    </div>
+                    <div class="colon4-card2-img2">
+                      <a href=""><img src="./assets/Images/myCANAL_Jaquette_Fiche_Programme_MEA_1242x1656-N520.webp" alt=""></a>
+                      <p class="text-white card2-img1-p">TWISTED METAL - SAISON1</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <!--
+              FIN TROISIEME
+            -->
+            <div class="text-white contain-01">
+              <div class="">
+                <h1>PLUS QUE CANAL+ DANS CANAL+</h1>
+                <span>CANAL+ rassemble les meilleurs contenus. Des milliers de programmes en live et à la<br> demande , partout et quand vous voulez</span>
+              </div>
+              <div class="link1">
+              <a href="">Voir plus</a>
+              </div>
+          </div>
+          
+          <!--
+            
+          -->
+          <div class="logo-paternaire">
+            <div class="logo-part"><a href=""><img src="./assets/Images/canal+_sport_logo.png" alt=""></a></div>
+            <div><a href=""><img src="./assets/Images/novelas_TV_logo.png" alt=""></a></div>
+            <div><a href=""><img src="./assets/Images/A+_channel_logo.png" alt=""></a></div>
+            <div><a href=""><img src="./assets/Images/Disney_Channel_logo.png" alt=""></a></div>
+            <div><a href=""><img src="./assets/Images/logo_Eurosport_blanc_transparent.png" alt=""></a></div>
+            <div><a href=""><img src="./assets/Images/novelas_TV_logo.png" alt=""></a></div>
+          </div>
+
+          <div class="text-white contain-01">
+            <div class="">
+              <h1>CANAL+ DISPO LÀ ET LÀ ET PUIS AUSSI LÀ</h1>
+              <span>Commencez votre contenu sur téléphone ou tablette et terminez le sur ordinateur ou <br> télévision. Ou l'inverse.</span>
+            </div>
+            
+        </div>
+
+         <div><img src="./assets/Images/MYCANAL_Lame_Web_MultiDevices_Showcase_1920x720_V2.png" alt=""></div>
+         <div class="text-white contain-01">
+            <div class="">
+              <h1>NOS VALEURS AU COEUR</h1>
+            </div>
+          </div>
+             <div class="grid grid-cols-3 text-white contain-02">
+                  <div class="contain-02-box">
+                    <img src="./assets/Images/partner_picto.png" width="30px" alt="">
+                    <h2>Partenaire du cinéma</h2>
+                    <span>Partenaire historique du cinéma africain, CANAL+<br> accorde une place privilégiée au 7ème art. Les chaînes <br>CANAL+ diffusent plus de 500 films dont quelques 350 <br> en première diffusion TV par an, ainsi que les grands<br> rendez-vous annuels du cinéma.</span>
+                  </div>
+                  <div class="contain-02-box">
+                    <img src="./assets/Images/Local.png" width="30px" alt="">
+                    <h2>Made in Africa</h2>
+                    <span>Fort de ses nombreux talents, de son expertise éditoriale<br>et technologique, le Groupe CANAL+ est fier de<br>proposer aux abonnés des programmes exclusifs et<br>originaux, conçus en Afrique et accessibles sur une<br> plateforme innovante.</span>
+                  </div>
+                  <div class="contain-02-box">
+                    <img src="./assets/Images/Involvement.png" width="30px" alt="">
+                    <h2>Engagement et responsabilité</h2>
+                    <span>CANAL+ a conscience de sa responsabilité en tant que <br> média, producteur, distributeur et agrégateur de <br> contenus et souhaite à ce titre représenter la société <br> dans toute sa diversité. Nous agissons également pour <br> améliorer l’accessibilité de nos interfaces et la réduction <br> de notre empreinte carbone.
+                    </span>
+                  </div>
+             </div>
+             
+           </div>
+
+            <img class="background-img" src="./assets/Images/MYCANAL_Lame_Mob_Mosaique_Showcase_1920x1080_V2.png" alt="">
+            <div class="contain-03 text-white">
+              <h1 class="pt-72 title ">ENFLAMMEZ-VOUS POUR LE MEILLEUR<br> DU STREAMING</h1> 
+              <a class="card2-link contain-03-link color-bg" href="http://">DECOUVRIR NOS OFFRES</a> 
+              </div>
+              
+              <footer class="bg-black ">
+     
+      <div class="fantom" ></div>
+    <div class=" border-b border-t footer-first text-white p-2  ">
+      Programmes
+    </div>
+    <div class=" grid grid-cols-2	text-slate-400">
+       <div >
+        <p class="onhover">Cinema</p>
+        <p class="onhover">Series</p>
+        <p class="onhover">Sport</p>
+        <p class="onhover">Jeunesse</p>
+        <p class="onhover">Documentaires</p>
+       </div>
+       <div><p>Divertissement</p>
+        <p class="onhover">Infos</p>
+        <p class="onhover">Musique</p>
+        <p class="onhover">Programme TV</p>
+        <p class="onhover">En direct</p></div>
+    </div>
+    <div class=" border-b pt-4 text-white p-2  ">
+      Services et apps
+    </div>
+    <div class=" grid grid-cols-2	text-slate-400">
+      <div >
+       <p class="onhover">Plan de site</p>
+       <p class="onhover">Offre d'emploi</p>
+       <p class="onhover">Chaines</p>
+       <p class="onhover">FAQ</p>
+       <p class="onhover">Taxonomie</p>
+       <p class="onhover">Chaines</p>
+       <p class="onhover">FAQ</p>
+       <p class="onhover">Taxonomie</p>
+      </div>
+      <div>
+        <p class="onhover">Divertissement</p>
+       <p class="onhover">Infos</p>
+       <p class="onhover">Musique</p>
+       <p class="onhover">Programme TV</p>
+       <p class="onhover">En direct</p>
+       <p class="onhover">Chaines</p>
+       <p class="onhover">FAQ</p>
+       <p class="onhover">Taxonomie</p>
+      </div>
+   </div>
+   <div class=" border-b pt-4 text-white p-2  ">
+    Abonnements et infos legales
+  </div>
+  <div class=" grid grid-cols-2	text-slate-400">
+    <div >
+     <p>Plan de site</p>
+     <p>Offre d'emploi</p>
+     <p>Chaines</p>
+     
+    </div>
+    <div>
+     <p>Infos</p>
+     <p>Musique</p>
+     <p>Programme TV</p>
+    </div>
+ </div>
+ <div class="flex flex-row text-white pt-3 pb-3">
+  <div class="rounded pr-2" >
+    <i class="fa-brands fa-facebook"></i></div>
+  <div class="pr-2">Facebook</div>
+  <div class="pr-2">Facebook</div>
+ </div>
+
+   <p class="text-slate-300 pl-2">Cameroun(FR)</p>
+   <div class="text-slate-700">
+   <p >Vivez l’expérience CANAL+, Le site de streaming le plus complet et le seul qui réunit vos films, vos séries (en HD, VF et VOST) et les plus belles compétitions sportives en direct ou en replay.</p>
+    <p>@CANAL+ 2024</p> 
+  </div>
+  </footer>
+
+  </body>
+</html>
